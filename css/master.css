@@ -1,0 +1,128 @@
+/* ------- Main Settings ------ */
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--Dark-cyan);
+    height: 100vh;
+}
+@media (max-width:991px) {
+    body {
+    padding: 0 50px;
+    }
+}
+/* ----------------------------------------- */
+.bg-image-top{
+    position: absolute;
+    left:-5%;
+    top:-40%;
+}
+.bg-image-bottom {
+    /* display: none; */
+    position: absolute;
+    right:-5%;
+    bottom: -45%;
+    /* transform: translateX(-50%); */
+}
+@media (max-width:991px) {
+    .bg-image-top img {
+        width:400px;
+        height: 400px;
+    }
+    .bg-image-top{
+        top: -17%;
+        left: -50%
+    }
+    
+    .bg-image-bottom img {
+        width:400px;
+        height: 400px;
+    }
+    .bg-image-bottom {
+        bottom: -10%;
+        right: -50%
+    }
+}
+/* ----------------------------- */
+.personal-card {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+
+.personal-card .top-image img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+
+.personal-card .prof-image {
+    margin-bottom: 70px;
+}
+.personal-card .prof-image img{
+    border-radius: 50%;
+    border: 6px solid white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:100px;
+}
+.personal-card .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--Dark-gray);
+    padding-bottom: 30px;
+}
+.personal-card .info .name-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+}
+.personal-card .info .name-head h1 {
+    font-size: 18px;
+}
+.personal-card .info  span {
+    color: var(--Dark-gray);
+}
+
+.personal-card .social-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.personal-card .social-info span{
+    display: block;
+}
+.personal-card .social-info .line .top {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.personal-card .social-info .line .bottom {
+    font-size: 14px;
+    color: var(--Dark-gray);
+}
